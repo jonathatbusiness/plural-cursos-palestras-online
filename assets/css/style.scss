@@ -55,6 +55,19 @@
 
 }
 
+#menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+//MENU HAMBURGER
+
+
+
+//MENU HAMBURGER FIM
+
+
+
 .contatos{
   display: flex;
   justify-content: space-between;
@@ -185,6 +198,9 @@
   
 }
 
+#menu_mobile {
+  display: none;
+}
 .contentSec{
   display: flex;
   flex-flow: column nowrap;
@@ -273,6 +289,9 @@
 
 }
 
+.cursos a{
+  text-decoration: none;
+}
 .cursos img{
   width: 100%;
   border-radius: 10px 10px 0px 0px;
@@ -315,6 +334,9 @@ footer{
 //MEDIA QUERIES<<<<<
 
 @media only screen and (max-width: 1317px) {
+
+
+  
 
   .capa {
     background-image: none;
@@ -387,6 +409,77 @@ footer{
 
 @media only screen and (max-width: 920px) {
 
+  //MENU HAMBURGER START
+  
+  
+  #menu{
+    display: block;
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    left: 0;
+    background: #272727;
+    display: block;
+    height: 0px;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+
+  
+  
+
+  #nav.active #menu {
+    
+    height: calc(100vh - 48px);
+    visibility: visible;
+    
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid #070707;
+  }
+
+  #menu_mobile{
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    
+    display: flex;
+    
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #hamburger{
+    color: #FF3F68;
+    border-top: 2px solid;
+    width: 20px;
+    
+  }
+
+  #hamburger::after, #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+  }
+
+
+
+  
+
+  //MENU HAMBURGER END
+
   .imgCapaTam-2{
     width: 100%;
     min-height: 30vh;
@@ -410,6 +503,21 @@ footer{
   .descricao{
     width: 100%;
     padding: 0 10px;
+  }
+
+  .contatos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .redesSociais{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .redesSociais a{
+    border: none !important;
   }
 
 
@@ -417,29 +525,12 @@ footer{
 
 @media only screen and (max-width: 414px) {
 
-  .imgCapaTam-2{
-    width: 100%;
-    min-height: 30vh;
-    
-    
-  }
-
-  .cursosContainer{
-    
-    grid-template-columns: repeat(auto-fill, 100%);
-    
-    grid-gap: 5px;
-  }
-
-  .capaTexto {
-    width: 100%;
-    padding: 0;
   
-  }
 
-  .descricao{
-    width: 100%;
-    padding: 0 10px;
+  footer{
+    padding-left: 5px;
+    padding-right: 5px;
+  
   }
 
 
