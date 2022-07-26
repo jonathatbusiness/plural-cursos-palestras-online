@@ -16,3 +16,5 @@ function toggleMenu(event){
 
 menuMobile.addEventListener('click', toggleMenu);
 menuMobile.addEventListener('touchstart', toggleMenu);
+
+//carousel

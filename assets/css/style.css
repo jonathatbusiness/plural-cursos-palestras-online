@@ -266,6 +266,75 @@ footer {
           animation-delay: 0.4s;
 }
 
+.carousel {
+  height: 250px;
+  width: 80%;
+  display: flex;
+}
+
+.carousel .switchLeft,
+.carousel .switchRight {
+  color: #fff;
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 25px;
+  text-align: center;
+  background-color: lightgreen;
+  font-family: sans-serif;
+  top: 0;
+  z-index: 3;
+}
+
+.carousel .switchLeft {
+  position: absolute;
+  left: -50px;
+}
+
+.carousel .switchRight {
+  position: absolute;
+  right: -50px;
+}
+
+.carouselbox {
+  height: 250px;
+  width: auto;
+  overflow: scroll;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+}
+
+.carouselbox img {
+  min-width: 147px;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: lightblue;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.cursos:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.cursos a:hover {
+  text-decoration: none;
+}
+
+.tituloCurso:hover {
+  color: #FF3F68;
+}
+
 @media only screen and (max-width: 1317px) {
   .capa {
     background-image: none;
@@ -291,6 +360,7 @@ footer {
   .tituloProduto {
     text-align: center;
     font-size: 30px;
+    margin-top: 10px;
   }
   .descricao {
     width: 90%;
@@ -405,5 +475,16 @@ footer {
   footer {
     padding-left: 5px;
     padding-right: 5px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 360px) {
+  .homeP {
+    min-width: 360px;
+  }
+  .capaTexto {
+    min-width: 360px;
+  }
+  .imgCapaTam-2 {
+    min-width: 360px;
   }
 }/*# sourceMappingURL=style.css.map */
