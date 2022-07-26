@@ -4,6 +4,7 @@
   font-family: "Epilogue", sans-serif;
   font-weight: 200;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 .homeP {
@@ -78,7 +79,7 @@
 }
 
 .instrucao {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 400;
   color: #FFf;
   text-align: center;
@@ -107,7 +108,7 @@
   color: #fff;
   font-weight: 500;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.0625em;
   text-align: center;
   width: 80%;
   background-color: #FF3F68;
@@ -149,6 +150,10 @@
   flex-direction: column;
 }
 
+.imgCapaTam-2 {
+  display: none;
+}
+
 .contentSec {
   display: flex;
   flex-flow: column nowrap;
@@ -159,7 +164,7 @@
 
 .tituloProduto {
   font-weight: 500;
-  font-size: 50px;
+  font-size: 3.125em;
   color: #fff;
 }
 
@@ -171,19 +176,21 @@
 }
 
 .descricao p {
-  font-size: 18px;
+  font-size: 1.125em;
   color: #fff;
 }
 
 .cliqueItens {
   margin-top: 20px;
+  display: flex;
   border: solid #FF3F68 1px;
   border-radius: 30px;
-  width: 600px;
+  width: 90%;
   text-align: center;
-  padding: 3px 5px;
+  padding: 5px 10px;
   color: #fff;
   font-weight: 500;
+  justify-content: center;
 }
 
 .capa {
@@ -231,7 +238,7 @@ footer {
   color: #fff;
   height: 80px;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875em;
   background-color: #000000;
 }
 
@@ -243,4 +250,88 @@ footer {
 .anim-2 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
+}
+
+@media only screen and (max-width: 1317px) {
+  .capa {
+    background-image: none;
+  }
+  .imgCapaTam-2 {
+    width: 100%;
+    min-height: 49vh;
+    background-image: url("../images/plural-cursos-palestra-bg-2.jpg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+  .capaTexto {
+    width: 75%;
+    margin: 0 auto;
+    min-height: 43vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .tituloProduto {
+    text-align: center;
+    font-size: 30px;
+  }
+  .descricao {
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .cliqueItens {
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+  }
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 30%);
+    grid-gap: 5px;
+  }
+  /*.cursos{
+    width: 34.40vh;
+  }*/
+}
+@media only screen and (max-width: 920px) {
+  .imgCapaTam-2 {
+    width: 100%;
+    min-height: 30vh;
+  }
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: 5px;
+  }
+  .capaTexto {
+    width: 100%;
+    padding: 0;
+  }
+  .descricao {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .imgCapaTam-2 {
+    width: 100%;
+    min-height: 30vh;
+  }
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: 5px;
+  }
+  .capaTexto {
+    width: 100%;
+    padding: 0;
+  }
+  .descricao {
+    width: 100%;
+    padding: 0 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
