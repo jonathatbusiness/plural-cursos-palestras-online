@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 200;
+  box-sizing: border-box;
+}
+
+.homeP {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  background-image: url("../images/plural-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.headerP {
+  width: 100%;
+  background-color: #272727;
+  height: 48px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  line-height: 48px;
+}
+
+.logo {
+  height: 3em;
+  display: flex;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+
+.contatos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redesSociais {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contatos a {
+  color: #FFf;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.redesSociais i, .contatos i {
+  color: #FF3F68;
+  margin-left: 10px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #272727;
+  width: 280px;
+  padding: 5px;
+  border-radius: 30px;
+  height: 350px;
+  margin: auto auto;
+}
+
+.instrucao {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFf;
+  text-align: center;
+}
+
+.tipoProduto {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 5px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.logoProdutos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoProdutos img {
+  margin: auto;
+  height: 5vh;
+}
+
+.tipoProduto a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  width: 80%;
+  background-color: #FF3F68;
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.homeP-2 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  background-image: url("../images/plural-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.containerP {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.capaTexto {
+  width: 40%;
+  margin-right: 40%;
+  min-height: 43vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contentSec {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 10px 10px;
+  min-height: 43vh;
+}
+
+.tituloProduto {
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+}
+
+.descricao {
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.descricao p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.cliqueItens {
+  margin-top: 20px;
+  border: solid #FF3F68 1px;
+  border-radius: 30px;
+  width: 600px;
+  text-align: center;
+  padding: 3px 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.capa {
+  width: 100%;
+  min-height: 43vh;
+  background-color: #272727;
+  background-image: url("../images/plural-cursos-palestra-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cursosContainer {
+  width: 100%;
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: space-between;
+  justify-items: center;
+  grid-gap: 20px;
+}
+
+.cursos {
+  background-color: #272727;
+  border-radius: 10px;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 15px #272727;
+}
+
+.cursos img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tituloCurso {
+  text-align: center;
+  color: #fff;
+  margin: 3px 5px;
+  font-weight: 500;
+}
+
+footer {
+  width: 100%;
+  padding-top: 20px;
+  color: #fff;
+  height: 80px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #000000;
+}
+
+.anim-1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.anim-2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}/*# sourceMappingURL=style.css.map */
