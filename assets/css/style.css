@@ -58,6 +58,7 @@
 .redesSociais {
   display: flex;
   justify-content: space-between;
+  width: 350px;
 }
 
 .contatos a {
@@ -68,7 +69,37 @@
 
 .redesSociais i, .contatos i {
   color: #FF3F68;
-  margin-left: 10px;
+  margin: 0px 30px 0px 30px;
+}
+
+.returnHome {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+.aStyle {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  width: 100%;
+  border: solid #FF3F68 2px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+}
+
+.aStyle:hover {
+  border: none;
+  background-color: #FF3F68;
+}
+
+.aStyle i {
+  margin-right: 5px;
+  margin-left: 0;
 }
 
 .group {
@@ -78,16 +109,66 @@
   flex-direction: column;
   background-color: #272727;
   width: 280px;
-  padding: 5px;
+  padding: 15px 15px;
   border-radius: 30px;
-  height: 350px;
+  min-height: 350px;
   margin: auto auto;
+  box-shadow: 0px 5px 10px #272727;
+  box-sizing: border-box;
 }
 
 .instrucao {
   font-size: 1.125em;
   font-weight: 400;
   color: #FFf;
+  text-align: center;
+  margin: 40px auto 20px auto;
+}
+
+.divider {
+  margin-top: 10px;
+  width: 100%;
+  flex-direction: row !important;
+  text-align: center;
+}
+
+.ouDivider {
+  display: flex;
+  margin: 11px auto 25px;
+  width: 43%;
+  border-bottom: 1px solid #fff;
+  line-height: 0.1em;
+}
+
+.ouDividerLeft {
+  float: left;
+}
+
+.ouDividerRight {
+  float: right;
+}
+
+.ouDividerText {
+  float: left;
+  margin: 0px 6px;
+}
+
+.selectOption {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.selectOption p {
+  font-weight: bold !important;
+  margin: 5px auto;
   text-align: center;
 }
 
@@ -168,7 +249,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 10px 10px;
+  padding: 0px 10px 0px 0px;
   min-height: 43vh;
 }
 
@@ -211,6 +292,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 10px 0;
 }
 
 .cursosContainer {
@@ -383,6 +465,14 @@ footer {
     width: 34.40vh;
   }*/
 }
+@media only screen and (max-width: 1209px) {
+  .redesSociais i, .contatos i {
+    margin: 0px 5px 0px 5px;
+  }
+  .redesSociais {
+    width: 200px;
+  }
+}
 @media only screen and (max-width: 920px) {
   #menu {
     display: block;
@@ -464,11 +554,13 @@ footer {
     flex-direction: column;
   }
   .redesSociais {
-    display: flex;
-    justify-content: center;
+    width: 300px;
   }
   .redesSociais a {
     border: none !important;
+  }
+  .returnHome {
+    margin: 0px 0;
   }
 }
 @media only screen and (max-width: 414px) {
@@ -485,6 +577,9 @@ footer {
     min-width: 360px;
   }
   .imgCapaTam-2 {
+    min-width: 360px;
+  }
+  .cursosContainer {
     min-width: 360px;
   }
 }/*# sourceMappingURL=style.css.map */

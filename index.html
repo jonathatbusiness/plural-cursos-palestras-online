@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!--GoogleFonts-->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
 
     <!--Animate-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -33,7 +34,8 @@
                 class="logo"></a>
         <nav class="menu" id="nav">
 
-            <button aria-label="Abrir Menu" id="menu_mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <button aria-label="Abrir Menu" id="menu_mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
                 <span id="hamburger"></span>
 
 
@@ -70,11 +72,26 @@
     </div>
     <div class="group animate__animated animate__fadeIn">
         <div class="logoProdutos"><img src="assets/images/Logo_02.png" alt="Logo Plural"></div>
-        <p class="instrucao">Clique em uma das opções abaixo:</p>
-        <div class="tipoProduto animate__animated animate__zoomIn anim-1"><a href="cursos-online-catalogo.html"
-                target="_blank">Cursos Online de Catálogo</a></div>
-        <div class="tipoProduto animate__animated animate__zoomIn anim-2"><a href="" target="_blank">Palestras Online ao
-                vivo e presenciais</a></div>
+        <p class="instrucao">Escolha uma das soluções abaixo:</p>
+        <div class="selectOption animate__animated animate__zoomIn anim-1">
+            <p>Cursos Online de Catálogo</p>
+            <div class="tipoProduto"><a href="cursos-online-catalogo.html">Acessar<i
+                        class="bi bi-arrow-right-short"></i></a></div>
+        </div>
+        <div class="divider">
+            <span class="ouDivider ouDividerLeft"></span><span class="instrucao ouDividerText">ou</span><span class="ouDivider ouDividerRight"></span>
+
+
+        </div>
+        
+
+        <div class="selectOption animate__animated animate__zoomIn anim-2">
+            <p>Palestras Online ao
+                vivo e presenciais</p>
+            <div class="tipoProduto"><a href="#">Acessar<i class="bi bi-arrow-right-short"></i></a></div>
+        </div>
+
+
     </div>
 
     <footer>
