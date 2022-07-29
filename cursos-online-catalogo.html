@@ -35,10 +35,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!--SWIPE-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    </link>
 
     <!--OUTROS-->
 
@@ -123,7 +121,9 @@
                             às demandas de cada projeto educacional.</p>
 
                     </div>
-                    <div class="cliqueItens">Clique nos itens abaixo e confira nosso portfólio de cursos</div>
+
+                    <div class="cliqueItens "><span id="tip-change">Clique nos itens abaixo para conferir nosso
+                            portfólio</span></div>
 
                 </div>
             </div>
@@ -142,7 +142,7 @@
             </div>
 
             <div class="cursos">
-                <button type="button" class="btnCourse" data-modal="modal2">
+                <button type="button" class="btnCourse" data-target="#modal2">
                     <div class="capaCurso"><img src="assets/images/cursos-prateleria/02_cursos_prateleria_plural.jpg">
                     </div>
                     <div class="tituloCurso">Gestão e Liderança</div>
@@ -150,7 +150,7 @@
             </div>
 
             <div class="cursos">
-                <button type="button" class="btnCourse" data-modal="modal3">
+                <button type="button" class="btnCourse" data-target="#modal3">
                     <div class="capaCurso"><img src="assets/images/cursos-prateleria/03_cursos_prateleria_plural.jpg">
                     </div>
                     <div class="tituloCurso">Desenvolvimento Pessoal</div>
@@ -158,7 +158,7 @@
             </div>
 
             <div class="cursos">
-                <button type="button" class="btnCourse" data-modal="modal4">
+                <button type="button" class="btnCourse" data-target="#modal4">
                     <div class="capaCurso"><img src="assets/images/cursos-prateleria/04_cursos_prateleria_plural.jpg">
                     </div>
                     <div class="tituloCurso">Criatividade e Inovação</div>
@@ -166,7 +166,7 @@
             </div>
 
             <div class="cursos">
-                <button type="button" class="btnCourse" data-modal="modal5">
+                <button type="button" class="btnCourse" data-target="#modal5">
                     <div class="capaCurso"><img src="assets/images/cursos-prateleria/05_cursos_prateleria_plural.jpg">
                     </div>
                     <div class="tituloCurso">Produtividade</div>
@@ -174,7 +174,7 @@
             </div>
 
             <div class="cursos">
-                <button type="button" class="btnCourse" data-modal="modal6">
+                <button type="button" class="btnCourse" data-target="#modal6">
                     <div class="capaCurso"><img src="assets/images/cursos-prateleria/06_cursos_prateleria_plural.jpg">
                     </div>
                     <div class="tituloCurso"><i>Compliance</i></div>
@@ -182,7 +182,7 @@
             </div>
 
             <div class="cursos">
-                <button type="button" class="btnCourse" data-modal="modal7">
+                <button type="button" class="btnCourse" data-target="#modal7">
                     <div class="capaCurso"><img src="assets/images/cursos-prateleria/07_cursos_prateleria_plural.jpg">
                     </div>
                     <div class="tituloCurso">Segurança no Trabalho</div>
@@ -190,7 +190,7 @@
             </div>
 
             <div class="cursos">
-                <button type="button" class="btnCourse" data-modal="modal8">
+                <button type="button" class="btnCourse" data-target="#modal8">
                     <div class="capaCurso"><img src="assets/images/cursos-prateleria/08_cursos_prateleria_plural.jpg">
                     </div>
                     <div class="tituloCurso">Instrumentais</div>
@@ -198,29 +198,133 @@
             </div>
             <!----======DESKTOP FIM======-->
 
-            
-        </div>
-        <!----======SWAPPER INICIO======-->
 
-            
+        </div>
+        <!----======SWIPER INICIO======-->
+
+        <!--SWIPER 1-->
         <div class="swiper-Container">
-            <div class="swiper jon">
+            <div class="cursos-Swiper">
                 <div class="swiper-wrapper">
+
+                    <!--CARD 1-->
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        <button type="button" class="btnCourse" data-target="#modal1">
+                            <img src="assets/images/cursos-prateleria/01_cursos_prateleria_plural.jpg">
+                            <div class="tituloCurso">Comunicação e <i>Feedback</i>
+
+
+                            </div>
+
+                        </button>
+
+                    </div>
+                    <!--CARD 2-->
+                    <div class="swiper-slide">
+                        <button type="button" class="btnCourse" data-target="#modal2">
+                            <img src="assets/images/cursos-prateleria/02_cursos_prateleria_plural.jpg">
+                            <div class="tituloCurso">Gestão e Liderança
+
+                            </div>
+
+                        </button>
+
+                    </div>
+                    <!--CARD 3-->
+                    <div class="swiper-slide" data-modal="modal3">
+                        <button type="button" class="btnCourse" data-target="#modal3">
+                            <img src="assets/images/cursos-prateleria/03_cursos_prateleria_plural.jpg">
+                            <div class="tituloCurso">Desenvolvimento Pessoal
+
+                            </div>
+
+
+                        </button>
+
+
+
+                    </div>
+                    <!--CARD 4-->
+                    <div class="swiper-slide" data-modal="modal4">
+                        <button type="button" class="btnCourse" data-target="#modal4">
+                            <img src="assets/images/cursos-prateleria/04_cursos_prateleria_plural.jpg">
+                            <div class="tituloCurso">Criatividade e Inovação
+                            </div>
+
+
+                        </button>
+
+
+
+                    </div>
+                    <!--CARD 5-->
+                    <div class="swiper-slide" data-modal="modal5">
+                        <button type="button" class="btnCourse" data-target="#modal5">
+                            <img src="assets/images/cursos-prateleria/05_cursos_prateleria_plural.jpg">
+                            <div class="tituloCurso">Produtividade
+
+                            </div>
+
+
+                        </button>
+
+
+
+                    </div>
+                    <!--CARD 6-->
+                    <div class="swiper-slide" data-modal="modal6">
+                        <button type="button" class="btnCourse" data-target="#modal6">
+                            <img src="assets/images/cursos-prateleria/06_cursos_prateleria_plural.jpg">
+                            <div class="tituloCurso"><i>Compliance</i>
+
+                            </div>
+
+                        </button>
+
+                    </div>
+                    <!--CARD 7-->
+                    <div class="swiper-slide" data-modal="modal7">
+                        <button type="button" class="btnCourse" data-target="#modal7">
+                            <img src="assets/images/cursos-prateleria/07_cursos_prateleria_plural.jpg">
+                            <div class="tituloCurso">Segurança no Trabalho
+
+                            </div>
+
+                        </button>
+
+                    </div>
+                    <!--CARD 8-->
+                    <div class="swiper-slide" data-modal="modal8">
+                        <button type="button" class="btnCourse" data-target="#modal8">
+                            <img src="assets/images/cursos-prateleria/08_cursos_prateleria_plural.jpg">
+                            <div class="tituloCurso">Instrumentais</div>
+
+
+                        </button>
+
                     </div>
 
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
 
-
+            <div class="swiper-pagination"></div>
         </div>
 
+        <!--SWIPER 1 FIM-->
 
 
 
-        <!----======SWAPPER FIM======-->
+
+
+
+
+
+    </div>
+
+
+
+
+    <!----======SWAPPER FIM======-->
 
 
     </div>
@@ -229,11 +333,13 @@
 
     <div id="overlay"></div>
 
+    <!--MODAL 1 START-->
+
     <div class="popup" id="modal1">
         <div class="capa-modal">
 
 
-            <div class="img-capa-modal">
+            <div class="img-capa-modal" style="background-image: url('./assets/images/cursos-prateleria/01_cursos_prateleria_plural.jpg');">
 
 
 
@@ -266,6 +372,295 @@
         </div>
     </div>
 
+    <!--MODAL 1 END-->
+
+    <!--MODAL 2 START-->
+
+    <div class="popup" id="modal2">
+        <div class="capa-modal">
+
+
+            <div class="img-capa-modal" style="background-image: url('./assets/images/cursos-prateleria/02_cursos_prateleria_plural.jpg');">
+
+
+
+
+
+
+                <div class="text-modal-container">
+                    <div class="texto-capa-modal">
+                        <div class="close-btn-wrapper">
+                            <div class="popup-close popup-close-a">x</div>
+                        </div>
+                        <h1 class="titulo-capa-modal">Comunicação e Feedback</h1>
+
+                        <div class="descricao-capa-modal">
+                            <ul>
+                                <li>A Importância do Feedback</li>
+                                <li>Como Falar Bem: Guia Rápido</li>
+                                <li>Comunicação Assertiva: Fale e Influencie</li>
+                                <li>Comunicação Interpessoal</li>
+                                <li>Feedback para Gestores e Líderes</li>
+                                <li>Gestão de Conflitos e Comunicação Não Violenta</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="popup-close popup-close-b"><span>Fechar</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL 2 END-->
+
+    <!--MODAL 3 START-->
+
+    <div class="popup" id="modal3">
+        <div class="capa-modal">
+
+
+            <div class="img-capa-modal" style="background-image: url('./assets/images/cursos-prateleria/03_cursos_prateleria_plural.jpg');">
+
+
+
+
+
+
+                <div class="text-modal-container">
+                    <div class="texto-capa-modal">
+                        <div class="close-btn-wrapper">
+                            <div class="popup-close popup-close-a">x</div>
+                        </div>
+                        <h1 class="titulo-capa-modal">Comunicação e Feedback</h1>
+
+                        <div class="descricao-capa-modal">
+                            <ul>
+                                <li>A Importância do Feedback</li>
+                                <li>Como Falar Bem: Guia Rápido</li>
+                                <li>Comunicação Assertiva: Fale e Influencie</li>
+                                <li>Comunicação Interpessoal</li>
+                                <li>Feedback para Gestores e Líderes</li>
+                                <li>Gestão de Conflitos e Comunicação Não Violenta</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="popup-close popup-close-b"><span>Fechar</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL 3 END-->
+
+    <!--MODAL 4 START-->
+
+    <div class="popup" id="modal4">
+        <div class="capa-modal">
+
+
+            <div class="img-capa-modal" style="background-image: url('./assets/images/cursos-prateleria/04_cursos_prateleria_plural.jpg');">
+
+
+
+
+
+
+                <div class="text-modal-container">
+                    <div class="texto-capa-modal">
+                        <div class="close-btn-wrapper">
+                            <div class="popup-close popup-close-a">x</div>
+                        </div>
+                        <h1 class="titulo-capa-modal">Comunicação e Feedback</h1>
+
+                        <div class="descricao-capa-modal">
+                            <ul>
+                                <li>A Importância do Feedback</li>
+                                <li>Como Falar Bem: Guia Rápido</li>
+                                <li>Comunicação Assertiva: Fale e Influencie</li>
+                                <li>Comunicação Interpessoal</li>
+                                <li>Feedback para Gestores e Líderes</li>
+                                <li>Gestão de Conflitos e Comunicação Não Violenta</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="popup-close popup-close-b"><span>Fechar</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL 4 END-->
+
+    <!--MODAL 5 START-->
+
+    <div class="popup" id="modal5">
+        <div class="capa-modal">
+
+
+            <div class="img-capa-modal" style="background-image: url('./assets/images/cursos-prateleria/05_cursos_prateleria_plural.jpg');">
+
+
+
+
+
+
+                <div class="text-modal-container">
+                    <div class="texto-capa-modal">
+                        <div class="close-btn-wrapper">
+                            <div class="popup-close popup-close-a">x</div>
+                        </div>
+                        <h1 class="titulo-capa-modal">Comunicação e Feedback</h1>
+
+                        <div class="descricao-capa-modal">
+                            <ul>
+                                <li>A Importância do Feedback</li>
+                                <li>Como Falar Bem: Guia Rápido</li>
+                                <li>Comunicação Assertiva: Fale e Influencie</li>
+                                <li>Comunicação Interpessoal</li>
+                                <li>Feedback para Gestores e Líderes</li>
+                                <li>Gestão de Conflitos e Comunicação Não Violenta</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="popup-close popup-close-b"><span>Fechar</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL 5 END-->
+
+    <!--MODAL 6 START-->
+
+    <div class="popup" id="modal6">
+        <div class="capa-modal">
+
+
+            <div class="img-capa-modal" style="background-image: url('./assets/images/cursos-prateleria/06_cursos_prateleria_plural.jpg');">
+
+
+
+
+
+
+                <div class="text-modal-container">
+                    <div class="texto-capa-modal">
+                        <div class="close-btn-wrapper">
+                            <div class="popup-close popup-close-a">x</div>
+                        </div>
+                        <h1 class="titulo-capa-modal">Comunicação e Feedback</h1>
+
+                        <div class="descricao-capa-modal">
+                            <ul>
+                                <li>A Importância do Feedback</li>
+                                <li>Como Falar Bem: Guia Rápido</li>
+                                <li>Comunicação Assertiva: Fale e Influencie</li>
+                                <li>Comunicação Interpessoal</li>
+                                <li>Feedback para Gestores e Líderes</li>
+                                <li>Gestão de Conflitos e Comunicação Não Violenta</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="popup-close popup-close-b"><span>Fechar</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL 6 END-->
+
+    <!--MODAL 7 START-->
+
+    <div class="popup" id="modal7">
+        <div class="capa-modal">
+
+
+            <div class="img-capa-modal" style="background-image: url('./assets/images/cursos-prateleria/07_cursos_prateleria_plural.jpg');">
+
+
+
+
+
+
+                <div class="text-modal-container">
+                    <div class="texto-capa-modal">
+                        <div class="close-btn-wrapper">
+                            <div class="popup-close popup-close-a">x</div>
+                        </div>
+                        <h1 class="titulo-capa-modal">Comunicação e Feedback</h1>
+
+                        <div class="descricao-capa-modal">
+                            <ul>
+                                <li>A Importância do Feedback</li>
+                                <li>Como Falar Bem: Guia Rápido</li>
+                                <li>Comunicação Assertiva: Fale e Influencie</li>
+                                <li>Comunicação Interpessoal</li>
+                                <li>Feedback para Gestores e Líderes</li>
+                                <li>Gestão de Conflitos e Comunicação Não Violenta</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="popup-close popup-close-b"><span>Fechar</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL 7 END-->
+
+    <!--MODAL 8 START-->
+
+    <div class="popup" id="modal8">
+        <div class="capa-modal">
+
+
+            <div class="img-capa-modal" style="background-image: url('./assets/images/cursos-prateleria/08_cursos_prateleria_plural.jpg');">
+
+
+
+
+
+
+                <div class="text-modal-container">
+                    <div class="texto-capa-modal">
+                        <div class="close-btn-wrapper">
+                            <div class="popup-close popup-close-a">x</div>
+                        </div>
+                        <h1 class="titulo-capa-modal">Comunicação e Feedback</h1>
+
+                        <div class="descricao-capa-modal">
+                            <ul>
+                                <li>A Importância do Feedback</li>
+                                <li>Como Falar Bem: Guia Rápido</li>
+                                <li>Comunicação Assertiva: Fale e Influencie</li>
+                                <li>Comunicação Interpessoal</li>
+                                <li>Feedback para Gestores e Líderes</li>
+                                <li>Gestão de Conflitos e Comunicação Não Violenta</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="popup-close popup-close-b"><span>Fechar</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL 8 END-->
+
 
 
 
@@ -277,21 +672,20 @@
 
     <script src="assets/js/modal.js" async defer></script>
     <script src="assets/js/script.js" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-
-    <!--INITIALIZE SWIPER-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".jon", {
-            effect: "coverflow",
+        const swiper = new Swiper(".cursos-Swiper", {
+            effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
             coverflowEffect: {
-                rotate: 50,
+                rotate: 0,
                 stretch: 0,
                 depth: 100,
-                modifier: 1,
+                modifier: 2,
                 slideShadows: true,
             },
             pagination: {
@@ -299,6 +693,49 @@
             },
         });
     </script>
+
+
+    <!--SCRIPT TIP INICIO-->
+    <script>
+
+
+
+
+        $(document).ready(function () {
+            var listenerAttached = false;
+            var resizeFix = function () {
+                var w = $(window).width();
+                if (!listenerAttached && w <= 600) {
+
+
+                    $("#tip-change").text("Arraste e clique nos itens abaixo para conferir nosso portfólio");
+                    listenerAttached = true;
+
+                } else if (listenerAttached && w > 600) {
+                    $("#tip-change").text("Clique nos itens abaixo para conferir nosso portfólio");
+                    listenerAttached = false;
+                }
+            };
+
+            resizeFix();
+
+            $(window).resize(function () {
+                resizeFix();
+            });
+        });
+
+
+
+
+    </script>
+    <!--SCRIPT TIP INICIO-->
+
+    <!--INITIALIZE SWIPER-->
+
+
+
+
+
 
 
     <footer>

@@ -130,6 +130,8 @@
   margin: 40px auto 20px auto;
 }
 
+
+
 .divider {
   margin-top: 10px;
   width: 100%;
@@ -277,6 +279,8 @@
   flex-direction: column;
 }
 
+
+
 .descricao p {
   font-size: 1.125em;
   color: #fff;
@@ -288,11 +292,16 @@
   border: solid #ff3f68 1px;
   border-radius: 30px;
   width: 90%;
-  text-align: center;
+  
   padding: 5px 10px;
+  
+  justify-content: center;
+}
+
+#tip-change {
+  text-align: center;
   color: #fff;
   font-weight: 500;
-  justify-content: center;
 }
 
 .capa {
@@ -358,28 +367,10 @@
   font-weight: 500;
 }
 //SWIPER
-.swiper-Container{
-  position: relative;
-        height: 100%;
+.swiper-Container {
+  display: none;
 }
 
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
 
 //SWIPER
 
@@ -697,6 +688,7 @@ footer {
     justify-content: center;
     margin: 0 auto;
     align-items: center;
+    
   }
 
   ///
@@ -763,6 +755,11 @@ footer {
     margin: 0 auto;
     align-items: center;
     font-size: 0.93em;
+    
+  }
+
+  .swiper-slide-active {
+    filter: blur(0);
   }
 }
 
@@ -770,40 +767,134 @@ footer {
 
 @media only screen and (max-width: 676px) {
   //AREA CURSOS
+
   .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 48%);
-
-    grid-gap: 3px;
+    display: none;
   }
 
-  .btnCourse {
-    width: 100%;
-    height: 100%;
+  :root {
+    --swiper-theme-color: #FF3F68 !important;
+
+  }
+
+  .swiper-slide button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+  }
+  
+  .swiper-Container{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-width: 500px;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+    
+  
+  }
+  
+  .swiper-container-3d .swiper-slide-shadow-left {
+    background-image: linear-gradiente(to left, rgba(0,0,0,.5), rgba(0,0,0,0));
+    
   }
 
-  .cursos {
+  .cursos-Swiper{
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
+  
+  .swiper {
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    min-height: 39.18vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
+  
+  .swiper-slide {
+    
+    background-position: center;
+    background-size: cover;
+    min-width: 300px;
+    background-color: #272727;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    filter: blur(4px);
+    
+    
   }
 
-  .cursos img {
+  .swiper-slide-active {
+    filter: blur(0);
+  }
+  
+  .swiper-slide-shadow-left, .swiper-slide-shadow-right {
+    border-radius: 15px;
+  }
+
+  .swiper-slide img {
+    
+    background-position-x: left;
+    
     width: 100%;
-    height: 39.18vh;
+    height: 60vh;
     object-fit: cover;
+    border-radius: 15px 15px 0 0;
   }
 
   .tituloCurso {
+    background-color: #272727;
+    border-radius: 0 0 15px 15px;
     width: 100%;
-    height: auto;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    font-size: 0.93em;
+    font-size: 1.125em;
+    
   }
+  // .cursosContainer {
+  //   grid-template-columns: repeat(auto-fill, 48%);
+
+  //   grid-gap: 3px;
+  // }
+
+  // .btnCourse {
+  //   width: 100%;
+  //   height: 100%;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-direction: column;
+  // }
+
+  // .cursos {
+  //   width: 100%;
+  //   border-radius: 10px 10px 10px 10px;
+  //   min-height: 39.18vh;
+  // }
+
+  // .cursos img {
+  //   width: 100%;
+  //   height: 39.18vh;
+  //   object-fit: cover;
+  // }
+
+  // .tituloCurso {
+  //   width: 100%;
+  //   height: auto;
+  //   justify-content: center;
+  //   margin: 0 auto;
+  //   align-items: center;
+  //   font-size: 0.93em;
+  // }
   //SWIPE SETTINGS
 
   
@@ -817,6 +908,8 @@ footer {
 
     grid-gap: 3px;
   }
+
+  
 
   .btnCourse {
     width: 100%;
@@ -851,6 +944,60 @@ footer {
     padding-left: 5px;
     padding-right: 5px;
   }
+
+
+  //SWIPER
+  .swiper-Container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 300px;    
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+ }
+
+.cursos-Swiper{
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
+  
+  .swiper {
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
+  
+  .swiper-slide {
+    
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-color: #272727;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    filter: blur(4px);
+    
+    
+  }
+
+  .swiper-slide-active {
+    filter: blur(0);
+  }
+
+  
+  
+ 
+
+ 
+
+
+
 }
 
 @media only screen and (min-width: 0px) and (max-width: 360px) {
@@ -861,10 +1008,16 @@ footer {
     min-width: 360px;
   }
   .imgCapaTam-2 {
-    min-width: 360px;
+    min-width: 100%;
   }
 
   .cursosContainer {
     min-width: 360px;
   }
+
+  .swiper-slide-active {
+    filter: blur(0);
+  }
+
+  
 }

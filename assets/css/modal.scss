@@ -27,7 +27,7 @@
 
 .popup {
   text-align: center;
-  width: 70%;
+  width: 60%;
   max-height: 10px;
   margin: 10% auto;
   padding: 20px;
@@ -105,7 +105,7 @@
   border-radius: 15px;
   display: flex;
   min-height: 60vh;
-  background-image: url("../images/cursos-prateleria/01_cursos_prateleria_plural.jpg");
+  
   background-repeat: no-repeat;
   background-size: cover;
   border: solid #7a7a7a 1px;
@@ -178,7 +178,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        overflow-y: scroll;
+        overflow-y: auto;
       }
 
       .text-modal-container {
