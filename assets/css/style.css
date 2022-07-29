@@ -62,13 +62,14 @@
 }
 
 .contatos a {
-  color: #FFf;
+  color: #fff;
   text-decoration: none;
   margin-left: 4px;
 }
 
-.redesSociais i, .contatos i {
-  color: #FF3F68;
+.redesSociais i,
+.contatos i {
+  color: #ff3f68;
   margin: 0px 30px 0px 30px;
 }
 
@@ -85,7 +86,7 @@
   text-decoration: none;
   font-weight: 500;
   width: 100%;
-  border: solid #FF3F68 2px;
+  border: solid #ff3f68 2px;
   border-radius: 3px;
   display: flex;
   justify-content: center;
@@ -94,7 +95,7 @@
 
 .aStyle:hover {
   border: none;
-  background-color: #FF3F68;
+  background-color: #ff3f68;
 }
 
 .aStyle i {
@@ -120,7 +121,7 @@
 .instrucao {
   font-size: 1.125em;
   font-weight: 400;
-  color: #FFf;
+  color: #fff;
   text-align: center;
   margin: 40px auto 20px auto;
 }
@@ -198,7 +199,7 @@
   font-size: 1.0625em;
   text-align: center;
   width: 80%;
-  background-color: #FF3F68;
+  background-color: #ff3f68;
   padding: 5px 5px;
   border-radius: 10px;
   margin: 0 auto;
@@ -274,7 +275,7 @@
 .cliqueItens {
   margin-top: 20px;
   display: flex;
-  border: solid #FF3F68 1px;
+  border: solid #ff3f68 1px;
   border-radius: 30px;
   width: 90%;
   text-align: center;
@@ -305,6 +306,16 @@
   grid-gap: 20px;
 }
 
+.cursosContainer button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 .cursos {
   background-color: #272727;
   border-radius: 10px;
@@ -328,6 +339,29 @@
   font-weight: 500;
 }
 
+.swiper-Container {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
 footer {
   width: 100%;
   padding-top: 20px;
@@ -348,61 +382,6 @@ footer {
           animation-delay: 0.4s;
 }
 
-.carousel {
-  height: 250px;
-  width: 80%;
-  display: flex;
-}
-
-.carousel .switchLeft,
-.carousel .switchRight {
-  color: #fff;
-  font-weight: bold;
-  height: 100%;
-  width: 45px;
-  line-height: 250px;
-  font-size: 25px;
-  text-align: center;
-  background-color: lightgreen;
-  font-family: sans-serif;
-  top: 0;
-  z-index: 3;
-}
-
-.carousel .switchLeft {
-  position: absolute;
-  left: -50px;
-}
-
-.carousel .switchRight {
-  position: absolute;
-  right: -50px;
-}
-
-.carouselbox {
-  height: 250px;
-  width: auto;
-  overflow: scroll;
-  white-space: nowrap;
-  display: inline-block;
-  text-align: center;
-  padding-bottom: 10px !important;
-  display: flex;
-  align-items: center;
-}
-
-.carouselbox img {
-  min-width: 147px;
-  max-width: 147px;
-  height: 200px;
-  background-size: cover;
-  background-color: lightblue;
-  margin: 5px 10px;
-  cursor: pointer;
-  transition: 0.5s ease;
-  z-index: 2;
-}
-
 .cursos:hover {
   transform: scale(1.05);
   transition: 0.5s;
@@ -414,7 +393,7 @@ footer {
 }
 
 .tituloCurso:hover {
-  color: #FF3F68;
+  color: #ff3f68;
 }
 
 @media only screen and (max-width: 1317px) {
@@ -465,12 +444,91 @@ footer {
     width: 34.40vh;
   }*/
 }
+@media only screen and (max-width: 1739px) {
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 41.58vh);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (max-width: 1623px) {
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 36.38vh);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (max-width: 1436px) {
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 32.22vh);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (max-width: 1287px) {
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 25.98vh);
+    grid-gap: 10px;
+  }
+  .btnCourse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .cursos {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    min-height: 32.64vh;
+  }
+  .cursos img {
+    width: 25.98vh;
+    height: 32.64vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tituloCurso {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
 @media only screen and (max-width: 1209px) {
-  .redesSociais i, .contatos i {
+  .redesSociais i,
+.contatos i {
     margin: 0px 5px 0px 5px;
   }
   .redesSociais {
     width: 200px;
+  }
+}
+@media only screen and (max-width: 1035px) {
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 21.82vh);
+    grid-gap: 10px;
+  }
+  .btnCourse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .cursos {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    min-height: 27.44vh;
+  }
+  .cursos img {
+    width: 21.82vh;
+    height: 27.44vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tituloCurso {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 920px) {
@@ -509,11 +567,12 @@ footer {
     cursor: pointer;
   }
   #hamburger {
-    color: #FF3F68;
+    color: #ff3f68;
     border-top: 2px solid;
     width: 20px;
   }
-  #hamburger::after, #hamburger::before {
+  #hamburger::after,
+#hamburger::before {
     content: "";
     display: block;
     width: 20px;
@@ -538,8 +597,33 @@ footer {
     min-height: 30vh;
   }
   .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 100%);
-    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, 30%);
+    grid-gap: 10px;
+  }
+  .btnCourse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .cursos {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    min-height: 27.44vh;
+  }
+  .cursos img {
+    width: 100%;
+    height: 27.44vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tituloCurso {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
   }
   .capaTexto {
     width: 100%;
@@ -563,7 +647,101 @@ footer {
     margin: 0px 0;
   }
 }
+@media only screen and (max-width: 920px) {
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 23%);
+    grid-gap: 10px;
+  }
+  .btnCourse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .cursos {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    min-height: 19.54vh;
+  }
+  .cursos img {
+    width: 100%;
+    height: 19.54vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tituloCurso {
+    width: 95%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 0.93em;
+  }
+}
+@media only screen and (max-width: 676px) {
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 48%);
+    grid-gap: 3px;
+  }
+  .btnCourse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .cursos {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    min-height: 39.18vh;
+  }
+  .cursos img {
+    width: 100%;
+    height: 39.18vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tituloCurso {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 0.93em;
+  }
+}
 @media only screen and (max-width: 414px) {
+  .cursosContainer {
+    grid-template-columns: repeat(auto-fill, 48%);
+    grid-gap: 3px;
+  }
+  .btnCourse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .cursos {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    min-height: 19.64vh;
+  }
+  .cursos img {
+    width: 100%;
+    height: 19.64vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tituloCurso {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 0.93em;
+  }
   footer {
     padding-left: 5px;
     padding-right: 5px;
