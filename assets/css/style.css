@@ -303,10 +303,10 @@
   width: 100%;
   padding: 10px 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: space-between;
   justify-items: center;
-  grid-gap: 20px;
 }
 
 .cursosContainer button {
@@ -420,36 +420,26 @@ footer {
     margin: 20px auto;
     width: 80%;
   }
-  .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 30%);
-    grid-gap: 5px;
-  }
   /*.cursos{
     width: 34.40vh;
   }*/
 }
-@media only screen and (max-width: 1739px) {
+@media only screen and (max-width: 1329px) {
   .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 41.58vh);
-    grid-gap: 20px;
-  }
-}
-@media only screen and (max-width: 1623px) {
-  .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 36.38vh);
-    grid-gap: 20px;
-  }
-}
-@media only screen and (max-width: 1436px) {
-  .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 32.22vh);
-    grid-gap: 20px;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    justify-items: center;
   }
 }
 @media only screen and (max-width: 1287px) {
   .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 25.98vh);
-    grid-gap: 10px;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    justify-items: center;
   }
   .btnCourse {
     width: 100%;
@@ -464,7 +454,7 @@ footer {
     min-height: 32.64vh;
   }
   .cursos img {
-    width: 25.98vh;
+    width: 100%;
     height: 32.64vh;
     -o-object-fit: cover;
        object-fit: cover;
@@ -486,10 +476,6 @@ footer {
   }
 }
 @media only screen and (max-width: 1035px) {
-  .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 21.82vh);
-    grid-gap: 10px;
-  }
   .btnCourse {
     width: 100%;
     height: 100%;
@@ -503,7 +489,7 @@ footer {
     min-height: 27.44vh;
   }
   .cursos img {
-    width: 21.82vh;
+    width: 100%;
     height: 27.44vh;
     -o-object-fit: cover;
        object-fit: cover;
@@ -513,6 +499,15 @@ footer {
     height: auto;
     justify-content: center;
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 961px) {
+  .cursosContainer {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    justify-content: space-between;
+    justify-items: center;
   }
 }
 @media only screen and (max-width: 920px) {
@@ -580,62 +575,6 @@ footer {
     width: 100%;
     min-height: 30vh;
   }
-  .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 30%);
-    grid-gap: 10px;
-  }
-  .btnCourse {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .cursos {
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    min-height: 27.44vh;
-  }
-  .cursos img {
-    width: 100%;
-    height: 27.44vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .tituloCurso {
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-  }
-  .capaTexto {
-    width: 100%;
-    padding: 0;
-  }
-  .descricao {
-    width: 100%;
-    padding: 0 10px;
-  }
-  .contatos {
-    display: flex;
-    flex-direction: column;
-  }
-  .redesSociais {
-    width: 300px;
-  }
-  .redesSociais a {
-    border: none !important;
-  }
-  .returnHome {
-    margin: 0px 0;
-  }
-}
-@media only screen and (max-width: 920px) {
-  .cursosContainer {
-    grid-template-columns: repeat(auto-fill, 23%);
-    grid-gap: 10px;
-  }
   .btnCourse {
     width: 100%;
     height: 100%;
@@ -655,7 +594,7 @@ footer {
        object-fit: cover;
   }
   .tituloCurso {
-    width: 95%;
+    width: 100%;
     height: auto;
     justify-content: center;
     margin: 0 auto;
@@ -664,6 +603,42 @@ footer {
   }
   .swiper-slide-active {
     filter: blur(0);
+  }
+}
+.capaTexto {
+  width: 100%;
+  padding: 0;
+}
+
+.descricao {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+}
+
+.redesSociais {
+  width: 300px;
+}
+
+.redesSociais a {
+  border: none !important;
+}
+
+.returnHome {
+  margin: 0px 0;
+}
+
+@media only screen and (max-width: 676px) {
+  .cursosContainer {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    justify-content: space-between;
+    justify-items: center;
   }
 }
 @media only screen and (max-width: 676px) {
