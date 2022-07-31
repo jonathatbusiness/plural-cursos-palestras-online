@@ -133,7 +133,7 @@
 
 /* Handle on hover */
 .text-modal-container {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.1), #ffffff 58%);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.6), #ffffff 58%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -148,6 +148,12 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 0 0 10px 10px;
+}
+
+.scroll-text {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 40vh;
 }
 
 .titulo-capa-modal,
@@ -170,6 +176,22 @@
   font-weight: 400;
 }
 
+@media only screen and (orientation: landscape) and (max-width: 915px) {
+  .popup.active {
+    top: -15%;
+  }
+  .img-capa-modal {
+    max-height: 90vh;
+  }
+  .texto-capa-modal {
+    max-height: 70vh;
+  }
+  .scroll-text {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 40vh;
+  }
+}
 @media only screen and (max-width: 790px) {
   .popup {
     text-align: center;
@@ -187,14 +209,16 @@
     border-radius: 15px;
   }
   .capa-modal {
-    min-width: 100%;
+    max-height: 90%;
   }
   .texto-capa-modal {
     max-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: auto;
+  }
+  .scroll-text {
+    max-height: 48vh;
   }
   .text-modal-container {
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.1), #ffffff 25%);
@@ -206,12 +230,33 @@
     min-height: 60vh;
   }
 }
+@media only screen and (orientation: landscape) and (max-width: 740px) {
+  .text-modal-container {
+    min-height: 90vh;
+  }
+  .texto-capa-modal {
+    max-height: 70vh;
+  }
+  .scroll-text {
+    overflow-y: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .scroll-text {
+    max-height: 41vh;
+  }
+}
 @media only screen and (max-width: 412px) {
   .capa-modal {
     max-height: 50vh;
   }
   .texto-capa-modal {
     max-height: 100%;
+  }
+  .scroll-text {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 35vh;
   }
   .img-capa-modal {
     min-height: initial;

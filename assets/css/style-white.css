@@ -23,14 +23,13 @@
 
 .headerP {
   width: 100%;
-  background-color: #272727;
+  background-color: #f3f3f3;
   height: 48px;
   display: flex;
   margin: 0;
   padding: 0;
   justify-content: space-between;
   line-height: 48px;
-  z-index: 900;
 }
 
 .logo {
@@ -63,9 +62,10 @@
 }
 
 .contatos a {
-  color: #fff;
+  color: #272727;
   text-decoration: none;
   margin-left: 4px;
+  font-weight: 400;
 }
 
 .contatos a:hover {
@@ -263,20 +263,15 @@
   display: none;
 }
 
-.imgCapaTam-2-b {
-  display: none;
-}
-
 #menu_mobile {
   display: none;
 }
 
 .contentSec {
-  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 10px 0px 0px;
   min-height: 43vh;
 }
 
@@ -293,7 +288,7 @@
   flex-direction: column;
 }
 
-.descricao p, .descricao b {
+.descricao p {
   font-size: 1.125em;
   color: #fff;
 }
@@ -315,17 +310,6 @@
 }
 
 .capa {
-  width: 100%;
-  min-height: 43vh;
-  background-color: #272727;
-  background-image: url("../images/plural-cursos-prateleira-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 10px 0;
-}
-
-.capa-b {
   width: 100%;
   min-height: 43vh;
   background-color: #272727;
@@ -361,7 +345,6 @@
   border-radius: 10px;
   margin: 10px 10px;
   box-shadow: 0px 0px 15px #272727;
-  transition: all 0.2s ease-in-out;
 }
 
 .cursos a {
@@ -400,22 +383,12 @@ footer {
 
 .anim-1 {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .anim-2 {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.anim-curso-capa {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.anim-curso-1 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.4s;
 }
 
 .cursos:hover {
@@ -436,20 +409,7 @@ footer {
   .capa {
     background-image: none;
   }
-  .capa-b {
-    background-image: none;
-  }
   .imgCapaTam-2 {
-    width: 100%;
-    min-height: 49vh;
-    background-image: url("../images/plural-cursos-prateleira-bg-2.jpg");
-    background-position: top;
-    background-size: cover;
-    display: flex;
-    background-repeat: no-repeat;
-    justify-content: center;
-  }
-  .imgCapaTam-2-b {
     width: 100%;
     min-height: 49vh;
     background-image: url("../images/plural-cursos-palestra-bg-2.jpg");
@@ -522,7 +482,7 @@ footer {
     width: 100%;
     height: 32.64vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tituloCurso {
     width: 100%;
@@ -557,7 +517,7 @@ footer {
     width: 100%;
     height: 27.44vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tituloCurso {
     width: 100%;
@@ -640,10 +600,6 @@ footer {
     width: 100%;
     min-height: 30vh;
   }
-  .imgCapaTam-2-b {
-    width: 100%;
-    min-height: 30vh;
-  }
   .btnCourse {
     width: 100%;
     height: 100%;
@@ -660,7 +616,7 @@ footer {
     width: 100%;
     height: 19.54vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tituloCurso {
     width: 100%;
@@ -700,12 +656,9 @@ footer {
   .imgCapaTam-2 {
     min-height: 64vh;
   }
-  .imgCapaTam-2-b {
-    min-height: 64vh;
-  }
   .cursos img {
     -o-object-position: top;
-       object-position: top;
+    object-position: top;
   }
 }
 @media only screen and (max-width: 747px) {
@@ -774,7 +727,7 @@ footer {
     width: 100%;
     height: 60vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
   .tituloCurso {
@@ -808,7 +761,7 @@ footer {
     width: 100%;
     height: 19.64vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tituloCurso {
     width: 100%;
@@ -865,13 +818,10 @@ footer {
   .imgCapaTam-2 {
     min-width: 100%;
   }
-  .imgCapaTam-2-b {
-    min-width: 100%;
-  }
   .cursosContainer {
     min-width: 360px;
   }
   .swiper-slide-active {
     filter: blur(0);
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style-white.css.map */

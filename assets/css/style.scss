@@ -30,6 +30,7 @@
   padding: 0;
   justify-content: space-between;
   line-height: 48px;
+  z-index: 900;
 }
 
 .logo {
@@ -67,11 +68,31 @@
   margin-left: 4px;
 }
 
+.contatos a:hover {
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+.phone{
+  text-decoration: none !important;
+}
+
 .redesSociais i,
 .contatos i {
   color: #ff3f68;
 
   margin: 0px 30px 0px 30px;
+}
+
+.redesSociais i {
+  color: #fff;
+
+  margin: 0px 30px 0px 30px;
+}
+
+.redesSociais i:hover{
+  color: #ff3f68;
+  transition: 0.3s ease-in-out;
 }
 
 .returnHome {
@@ -99,6 +120,7 @@
 .aStyle:hover {
   border: none;
   background-color: #ff3f68;
+  transition: 0.3s ease-in-out;
 }
 
 .aStyle i {
@@ -129,8 +151,6 @@
   text-align: center;
   margin: 40px auto 20px auto;
 }
-
-
 
 .divider {
   margin-top: 10px;
@@ -253,14 +273,19 @@
   display: none;
 }
 
+.imgCapaTam-2-b {
+  display: none;
+}
+
 #menu_mobile {
   display: none;
 }
 .contentSec {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
   //position: relative;
   //z-index: 1;
   min-height: 43vh;
@@ -279,12 +304,12 @@
   flex-direction: column;
 }
 
-
-
-.descricao p {
+.descricao p, .descricao b {
   font-size: 1.125em;
   color: #fff;
 }
+
+
 
 .cliqueItens {
   margin-top: 20px;
@@ -292,9 +317,9 @@
   border: solid #ff3f68 1px;
   border-radius: 30px;
   width: 90%;
-  
+
   padding: 5px 10px;
-  
+
   justify-content: center;
 }
 
@@ -305,6 +330,17 @@
 }
 
 .capa {
+  width: 100%;
+  min-height: 43vh;
+  background-color: #272727;
+  background-image: url("../images/plural-cursos-prateleira-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px 0;
+}
+
+.capa-b {
   width: 100%;
   min-height: 43vh;
   background-color: #272727;
@@ -329,7 +365,6 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: space-between;
   justify-items: center;
-  
 }
 //reset button appearence
 .cursosContainer button {
@@ -351,7 +386,10 @@
   //flex-wrap: wrap;
   margin: 10px 10px;
   box-shadow: 0px 0px 15px#272727;
+  transition: all .2s ease-in-out;
 }
+
+
 
 .cursos a {
   text-decoration: none;
@@ -362,9 +400,14 @@
 }
 
 .tituloCurso {
+  padding: 3px 5px;
+  color: #fff;
+}
+
+.tituloCurso span {
   text-align: center;
   color: #fff;
-  margin: 3px 5px;
+
   font-weight: 500;
 }
 //SWIPER
@@ -372,9 +415,7 @@
   display: none;
 }
 
-
 //SWIPER
-
 
 footer {
   width: 100%;
@@ -396,6 +437,22 @@ footer {
 .anim-2 {
   animation-delay: 0.4s;
 }
+
+.anim-curso-capa{
+  animation-delay: 0s;
+
+}
+
+.anim-curso-1 {
+  animation-delay: 0.5s;
+
+}
+
+
+
+
+
+//ANIMATE END
 
 //CAROUSEL
 
@@ -421,7 +478,22 @@ footer {
     background-image: none;
   }
 
+  .capa-b{
+    background-image: none;
+  }
+
   .imgCapaTam-2 {
+    width: 100%;
+    min-height: 49vh;
+    background-image: url("../images/plural-cursos-prateleira-bg-2.jpg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+
+  .imgCapaTam-2-b {
     width: 100%;
     min-height: 49vh;
     background-image: url("../images/plural-cursos-palestra-bg-2.jpg");
@@ -463,8 +535,6 @@ footer {
     width: 80%;
   }
 
-  
-
   /*.cursos{
     width: 34.40vh;
   }*/
@@ -472,31 +542,22 @@ footer {
 
 @media only screen and (max-width: 1329px) {
   .cursosContainer {
-   
-  
-    
-    
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-between;
     justify-items: center;
-    
   }
-
 }
 
 @media only screen and (max-width: 1287px) {
-  .cursosContainer {   
-    
+  .cursosContainer {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: space-between;
     justify-items: center;
-    
   }
-  
 
   .btnCourse {
     width: 100%;
@@ -573,16 +634,13 @@ footer {
 }
 
 @media only screen and (max-width: 961px) {
-  .cursosContainer {   
-    
+  .cursosContainer {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     justify-content: space-between;
     justify-items: center;
-    
   }
-
 }
 
 @media only screen and (max-width: 920px) {
@@ -666,7 +724,10 @@ footer {
     min-height: 30vh;
   }
 
-  
+  .imgCapaTam-2-b {
+    width: 100%;
+    min-height: 30vh;
+  }
 
   .btnCourse {
     width: 100%;
@@ -676,7 +737,7 @@ footer {
     flex-direction: column;
   }
 
-   .cursos {
+  .cursos {
     width: 100%;
     border-radius: 10px 10px 10px 10px;
     min-height: 19.54vh;
@@ -694,22 +755,19 @@ footer {
     justify-content: center;
     margin: 0 auto;
     align-items: center;
-font-size: 0.93em;
-}
+    font-size: 0.93em;
+  }
 
-.swiper-slide-active {
+  .swiper-slide-active {
     filter: blur(0);
   }
-}
-    
-  
 
   ///
 
-  .capaTexto {
-    width: 100%;
-    padding: 0;
-  }
+  // .capaTexto {
+  //   width: 100%;
+  //   padding: 0;
+  // }
 
   .descricao {
     width: 100%;
@@ -732,20 +790,34 @@ font-size: 0.93em;
   .returnHome {
     margin: 0px 0;
   }
+}
 
-  @media only screen and (max-width: 676px) {
-    .cursosContainer {   
-    
-      display: grid;
-      grid-gap: 2em;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      justify-content: space-between;
-      justify-items: center;
-      
-    }
-
-
+@media only screen and (orientation: landscape) and (max-width: 915px) {
+  .capaCurso {
+    width: 100%;
+    justify-items: flex-start;
+    box-sizing: border-box;
   }
+
+  .imgCapaTam-2 {
+    min-height: 64vh;
+  }
+
+  .imgCapaTam-2-b {
+    min-height: 64vh;
+  }
+
+  .cursos img {
+    object-position: top;
+  }
+}
+
+@media only screen and (max-width: 747px) {
+  .capaTexto {
+    width: 95%;
+  }
+}
+
 
 
 @media only screen and (max-width: 676px) {
@@ -756,8 +828,7 @@ font-size: 0.93em;
   }
 
   :root {
-    --swiper-theme-color: #FF3F68 !important;
-
+    --swiper-theme-color: #ff3f68 !important;
   }
 
   .swiper-slide button {
@@ -768,10 +839,9 @@ font-size: 0.93em;
     font: inherit;
     cursor: pointer;
     outline: inherit;
-
   }
-  
-  .swiper-Container{
+
+  .swiper-Container {
     display: flex;
     align-items: center;
     position: relative;
@@ -781,56 +851,50 @@ font-size: 0.93em;
     display: flex;
     justify-content: center;
     overflow: hidden;
-    
-    
-    
-  
-  }
-  
-  .swiper-container-3d .swiper-slide-shadow-left {
-    background-image: linear-gradiente(to left, rgba(0,0,0,.5), rgba(0,0,0,0));
-    
   }
 
-  .cursos-Swiper{
+  .swiper-container-3d .swiper-slide-shadow-left {
+    background-image: linear-gradiente(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .cursos-Swiper {
     width: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
-    
   }
-  
+
   .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    
   }
-  
+
   .swiper-slide {
-    
     background-position: center;
     background-size: cover;
     min-width: 300px;
     background-color: #272727;
     border-radius: 15px;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
     filter: blur(4px);
-    
-    
   }
 
   .swiper-slide-active {
     filter: blur(0);
   }
-  
-  .swiper-slide-shadow-left, .swiper-slide-shadow-right {
+
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
     border-radius: 15px;
   }
 
   .swiper-slide img {
-    
     background-position-x: left;
-    
+
     width: 100%;
     height: 60vh;
     object-fit: cover;
@@ -842,44 +906,7 @@ font-size: 0.93em;
     border-radius: 0 0 15px 15px;
     width: 100%;
     font-size: 1.125em;
-    
   }
-  // .cursosContainer {
-  //   grid-template-columns: repeat(auto-fill, 48%);
-
-  //   grid-gap: 3px;
-  // }
-
-  // .btnCourse {
-  //   width: 100%;
-  //   height: 100%;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   flex-direction: column;
-  // }
-
-  // .cursos {
-  //   width: 100%;
-  //   border-radius: 10px 10px 10px 10px;
-  //   min-height: 39.18vh;
-  // }
-
-  // .cursos img {
-  //   width: 100%;
-  //   height: 39.18vh;
-  //   object-fit: cover;
-  // }
-
-  // .tituloCurso {
-  //   width: 100%;
-  //   height: auto;
-  //   justify-content: center;
-  //   margin: 0 auto;
-  //   align-items: center;
-  //   font-size: 0.93em;
-  // }
-  //SWIPE SETTINGS
-
   
 
   //SWIPE SETTINGS FIM
@@ -892,7 +919,9 @@ font-size: 0.93em;
     grid-gap: 3px;
   }
 
-  
+  .cliqueItens {
+    width: 95%;
+  }
 
   .btnCourse {
     width: 100%;
@@ -928,59 +957,43 @@ font-size: 0.93em;
     padding-right: 5px;
   }
 
-
   //SWIPER
-  .swiper-Container{
+  .swiper-Container {
     display: flex;
     align-items: center;
     position: relative;
-    min-width: 300px;    
+    min-width: 300px;
     min-height: 60vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
-    
- }
+  }
 
-.cursos-Swiper{
+  .cursos-Swiper {
     width: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
-    
   }
-  
+
   .swiper {
     width: 80%;
     padding-top: 50px;
     padding-bottom: 50px;
-    
   }
-  
+
   .swiper-slide {
-    
     background-position: center;
     background-size: cover;
     width: 100%;
     background-color: #272727;
     border-radius: 15px;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
     filter: blur(4px);
-    
-    
   }
 
   .swiper-slide-active {
     filter: blur(0);
   }
-
-  
-  
- 
-
- 
-
-
-
 }
 
 @media only screen and (min-width: 0px) and (max-width: 360px) {
@@ -994,6 +1007,10 @@ font-size: 0.93em;
     min-width: 100%;
   }
 
+  .imgCapaTam-2-b {
+    min-width: 100%;
+  }
+
   .cursosContainer {
     min-width: 360px;
   }
@@ -1001,6 +1018,4 @@ font-size: 0.93em;
   .swiper-slide-active {
     filter: blur(0);
   }
-
-  
 }
