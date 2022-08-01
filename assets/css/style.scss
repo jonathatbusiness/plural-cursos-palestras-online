@@ -404,7 +404,7 @@
   color: #fff;
 }
 
-.tituloCurso span {
+.tituloCurso span, i {
   text-align: center;
   color: #fff;
 
@@ -558,6 +558,72 @@ footer {
     justify-content: space-between;
     justify-items: center;
   }
+//ADJUST IMAGE SECTION
+  
+  //CURSOS CATÁLOGO
+  .adj-a-1{
+    object-position: 100% 0%;
+  }
+
+  .adj-a-2{
+    object-position: 25% 0%;
+  }
+
+  .adj-a-3{
+    object-position: 60% 0%;
+  }
+
+
+  //PALESTRAS  
+  .adj-1{
+    object-position: 80% 0%;
+  }
+
+  .adj-2{
+    object-position: 95% 0%;
+  }
+
+  .adj-6{
+    object-position: 60% 0%;
+  }
+
+  .adj-7{
+    object-position: 90% 0%;
+  }
+
+  .adj-9{
+    object-position: 45% 0%;
+  }
+
+  .adj-10{
+    object-position: 80% 0%;
+  }
+
+  .adj-11{
+    object-position: 90% 0%;
+  }
+
+  .adj-13{
+    object-position: 60% 0%;
+  }
+
+  .adj-14{
+    object-position: 60% 0%;
+  }
+
+  .adj-16{
+    object-position: 80% 0%;
+  }
+
+  .adj-17{
+    object-position: 60% 0%;
+  }
+
+  .adj-18{
+    object-position: 95% 0%;
+  }
+
+//ADJUST IMAGE SECTION
 
   .btnCourse {
     width: 100%;

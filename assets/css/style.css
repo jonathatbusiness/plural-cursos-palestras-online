@@ -378,7 +378,7 @@
   color: #fff;
 }
 
-.tituloCurso span {
+.tituloCurso span, i {
   text-align: center;
   color: #fff;
   font-weight: 500;
@@ -505,6 +505,66 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: space-between;
     justify-items: center;
+  }
+  .adj-a-1 {
+    -o-object-position: 100% 0%;
+       object-position: 100% 0%;
+  }
+  .adj-a-2 {
+    -o-object-position: 25% 0%;
+       object-position: 25% 0%;
+  }
+  .adj-a-3 {
+    -o-object-position: 60% 0%;
+       object-position: 60% 0%;
+  }
+  .adj-1 {
+    -o-object-position: 80% 0%;
+       object-position: 80% 0%;
+  }
+  .adj-2 {
+    -o-object-position: 95% 0%;
+       object-position: 95% 0%;
+  }
+  .adj-6 {
+    -o-object-position: 60% 0%;
+       object-position: 60% 0%;
+  }
+  .adj-7 {
+    -o-object-position: 90% 0%;
+       object-position: 90% 0%;
+  }
+  .adj-9 {
+    -o-object-position: 45% 0%;
+       object-position: 45% 0%;
+  }
+  .adj-10 {
+    -o-object-position: 80% 0%;
+       object-position: 80% 0%;
+  }
+  .adj-11 {
+    -o-object-position: 90% 0%;
+       object-position: 90% 0%;
+  }
+  .adj-13 {
+    -o-object-position: 60% 0%;
+       object-position: 60% 0%;
+  }
+  .adj-14 {
+    -o-object-position: 60% 0%;
+       object-position: 60% 0%;
+  }
+  .adj-16 {
+    -o-object-position: 80% 0%;
+       object-position: 80% 0%;
+  }
+  .adj-17 {
+    -o-object-position: 60% 0%;
+       object-position: 60% 0%;
+  }
+  .adj-18 {
+    -o-object-position: 95% 0%;
+       object-position: 95% 0%;
   }
   .btnCourse {
     width: 100%;
