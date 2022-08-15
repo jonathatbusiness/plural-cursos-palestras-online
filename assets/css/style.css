@@ -293,7 +293,8 @@
   flex-direction: column;
 }
 
-.descricao p, .descricao b {
+.descricao p,
+.descricao b {
   font-size: 1.125em;
   color: #fff;
 }
@@ -378,7 +379,8 @@
   color: #fff;
 }
 
-.tituloCurso span, i {
+.tituloCurso span,
+i {
   text-align: center;
   color: #fff;
   font-weight: 500;
@@ -400,22 +402,22 @@ footer {
 
 .anim-1 {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .anim-2 {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .anim-curso-capa {
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .anim-curso-1 {
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .cursos:hover {
@@ -508,63 +510,63 @@ footer {
   }
   .adj-a-1 {
     -o-object-position: 100% 0%;
-       object-position: 100% 0%;
+    object-position: 100% 0%;
   }
   .adj-a-2 {
     -o-object-position: 25% 0%;
-       object-position: 25% 0%;
+    object-position: 25% 0%;
   }
   .adj-a-3 {
     -o-object-position: 60% 0%;
-       object-position: 60% 0%;
+    object-position: 60% 0%;
   }
   .adj-1 {
     -o-object-position: 80% 0%;
-       object-position: 80% 0%;
+    object-position: 80% 0%;
   }
   .adj-2 {
     -o-object-position: 95% 0%;
-       object-position: 95% 0%;
+    object-position: 95% 0%;
   }
   .adj-6 {
     -o-object-position: 60% 0%;
-       object-position: 60% 0%;
+    object-position: 60% 0%;
   }
   .adj-7 {
     -o-object-position: 90% 0%;
-       object-position: 90% 0%;
+    object-position: 90% 0%;
   }
   .adj-9 {
     -o-object-position: 45% 0%;
-       object-position: 45% 0%;
+    object-position: 45% 0%;
   }
   .adj-10 {
     -o-object-position: 80% 0%;
-       object-position: 80% 0%;
+    object-position: 80% 0%;
   }
   .adj-11 {
     -o-object-position: 90% 0%;
-       object-position: 90% 0%;
+    object-position: 90% 0%;
   }
   .adj-13 {
     -o-object-position: 60% 0%;
-       object-position: 60% 0%;
+    object-position: 60% 0%;
   }
   .adj-14 {
     -o-object-position: 60% 0%;
-       object-position: 60% 0%;
+    object-position: 60% 0%;
   }
   .adj-16 {
     -o-object-position: 80% 0%;
-       object-position: 80% 0%;
+    object-position: 80% 0%;
   }
   .adj-17 {
     -o-object-position: 60% 0%;
-       object-position: 60% 0%;
+    object-position: 60% 0%;
   }
   .adj-18 {
     -o-object-position: 95% 0%;
-       object-position: 95% 0%;
+    object-position: 95% 0%;
   }
   .btnCourse {
     width: 100%;
@@ -582,7 +584,7 @@ footer {
     width: 100%;
     height: 32.64vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tituloCurso {
     width: 100%;
@@ -593,7 +595,7 @@ footer {
 }
 @media only screen and (max-width: 1209px) {
   .redesSociais i,
-.contatos i {
+  .contatos i {
     margin: 0px 5px 0px 5px;
   }
   .redesSociais {
@@ -617,7 +619,7 @@ footer {
     width: 100%;
     height: 27.44vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tituloCurso {
     width: 100%;
@@ -676,7 +678,7 @@ footer {
     width: 20px;
   }
   #hamburger::after,
-#hamburger::before {
+  #hamburger::before {
     content: "";
     display: block;
     width: 20px;
@@ -720,7 +722,7 @@ footer {
     width: 100%;
     height: 19.54vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tituloCurso {
     width: 100%;
@@ -765,7 +767,7 @@ footer {
   }
   .cursos img {
     -o-object-position: top;
-       object-position: top;
+    object-position: top;
   }
 }
 @media only screen and (max-width: 747px) {
@@ -801,7 +803,11 @@ footer {
     overflow: hidden;
   }
   .swiper-container-3d .swiper-slide-shadow-left {
-    background-image: linear-gradiente(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradiente(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    );
   }
   .cursos-Swiper {
     width: 50%;
@@ -826,7 +832,7 @@ footer {
     filter: blur(0);
   }
   .swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
+  .swiper-slide-shadow-right {
     border-radius: 15px;
   }
   .swiper-slide img {
@@ -834,7 +840,7 @@ footer {
     width: 100%;
     height: 60vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
   .tituloCurso {
@@ -868,7 +874,7 @@ footer {
     width: 100%;
     height: 19.64vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .tituloCurso {
     width: 100%;
@@ -934,4 +940,4 @@ footer {
   .swiper-slide-active {
     filter: blur(0);
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
